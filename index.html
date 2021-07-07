@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <title>Food-Network</title>
+</head>
+
+<body>
+    <!-- -------------------navigation-bar--------------------- -->
+    <nav>
+
+    </nav>
+
+
+    <!-- -------------------------header----------------------------     -->
+    <header>
+        <div class="row">
+            <h1><span>Skip </span>The Diet,<br> Eat Healthy <br> With Food Network</h1>
+            <p>Imagine you don't need a diet because we provide<br>healthy and delicious food for you!</p>
+            <a href="#">Order Food</a>
+        </div>
+        <div class="row h-image">
+            <div class="img">
+
+            </div>
+            <!-- <img src="assets/h-1.png" alt="photo"> -->
+        </div>
+    </header>
+    <!-- -------------------------about-me-----------------------------    -->
+    <section class="about-me">
+        <div class="a-img">
+            <img src="assets\women-crossarms.png" alt="photo">
+        </div>
+        <div class="a-texts">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel</p>
+            <a href="#">Contact me</a>
+        </div>
+    </section>
+
+    <!-- --------------------------my-recepei-----------------    -->
+    <section class="my-recipies">
+        <h1>My Recipies</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the<br> 1500s
+        </p>
+        <div class="r-grid">
+
+            <div class="card">
+                <div class="card__content">
+
+                    <div class="card__front c1">
+                        <h3 class="card__title">Recipie</h3>
+                    </div>
+
+                    <div class="card__back">
+                        <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam molestias</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+
+                    <div class="card__front c2">
+                        <h3 class="card__title">Recipie</h3>
+                    </div>
+
+                    <div class="card__back">
+                        <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam molestias</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+
+                    <div class="card__front c3">
+                        <h3 class="card__title">Recipie</h3>
+                    </div>
+
+                    <div class="card__back">
+                        <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam molestias</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------counter-----------------------     -->
+    <section class="c-counter">
+        <div class="c-row">
+            <h1 class="counter">700</h1>
+            <h1 class="inline ">K</h1>
+            <p>Youtube Subscribers</p>
+        </div>
+        <div class="c-row ">
+            <h1 class="counter">2.5</h1>
+            <h1 class="inline ">m</h1>
+            <p>Youtube Subscribers</p>
+        </div>
+        <div class="c-row ">
+            <h1 class="counter">100</h1>
+            <h1 class="inline ">K</h1>
+            <p>Youtube Subscribers</p>
+        </div>
+    </section>
+    <!-- ------------------------------map------------------------- -->
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29217.887264325702!2d90.3612419395508!3d23.738965500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9835a731cef%3A0x613f83958317a0df!2sDomino&#39;s%20Pizza%20-%20Dhanmondi!5e0!3m2!1sen!2sbd!4v1625639764991!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="g-con">
+            <div class="frame">
+                <h1>Send Message</h1>
+                <input type="text" placeholder="Name" required>
+                <input type="Email" placeholder="Email" required>
+                <textarea name="" placeholder="Your message" id="" cols="30" rows="10"></textarea>
+                <button>Send</button>
+            </div>
+            <div class="c-anim">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------Footer------------------------------- -->
+    <footer>
+        <h1><span>FOOD </span>NETWORK</h1>
+        <p>Eat healthy to live healthy. Live healthy to live happy</p>
+        <p class="copy_right">© 2021, Dipta</p>
+    </footer>
+
+    <!-- ----------------------------script--------------------- -->
+
+    <script>
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+</body>
+
+</html>
