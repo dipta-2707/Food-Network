@@ -7,8 +7,40 @@
     color: rgba(0, 0, 0, 0.671);
 }
 
+:root {
+    --bgColor: white;
+    --text: color: rgba(0, 0, 0, 0.671);
+    --primary: #ec782ad0;
+    --bar: white;
+    --framebg: white;
+}
+
 a {
     text-decoration: none;
+}
+
+#loding {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bgColor);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loding img {
+    animation: loding-anim 8s infinite linear;
+}
+
+@keyframes loding-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 header {
@@ -24,10 +56,11 @@ header {
     font-weight: 700;
     word-spacing: 0.3rem;
     line-height: 3.8rem;
+    color: var(--text);
 }
 
 .row h1 span {
-    color: #ec782ad0
+    color: #ec782ad0;
 }
 
 .h-image {
@@ -77,10 +110,11 @@ header {
 
 .row p {
     margin: 1.5rem 0 2.3rem 0;
+    color: var(--text);
 }
 
 .row a {
-    color: #fff;
+    color: white;
     padding: .8rem 1.4rem;
     background-image: linear-gradient(to right, #f99523, #e65c00);
     border-radius: 25px;
@@ -134,10 +168,12 @@ header {
     text-align: center;
     font-size: 42px;
     font-weight: 600;
+    color: var(--text);
 }
 
 .my-recipies p {
     text-align: center;
+    color: var(--text);
 }
 
 .r-grid {
@@ -154,6 +190,7 @@ header {
 
 .card {
     width: 400px;
+    cursor: pointer;
 }
 
 .card__content {
@@ -236,6 +273,11 @@ header {
 .c-counter h1 {
     font-size: 42px;
     display: inline-block;
+    color: var(--text);
+}
+
+.c-counter p {
+    color: var(--text);
 }
 
 .contact {
@@ -249,6 +291,7 @@ header {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color: var(--text);
 }
 
 iframe {
@@ -281,6 +324,7 @@ textarea {
     border: none;
     border-bottom: 1px solid #e65c00;
     outline: none;
+    background-color: var(--framebg);
 }
 
 .frame button {
@@ -292,10 +336,37 @@ textarea {
 }
 
 .c-anim {
-    background-image: url(assets/undraw_contact_us_15o2.png);
-    background-size: cover;
-    background-position: center;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.c-anim-col {
+    margin: 1rem 0;
+}
+
+.follow .fab {
+    font-size: 28px;
+    margin-right: .4rem;
+    cursor: pointer;
+}
+
+.fa-twitter-square {
+    color: #00acee;
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+}
+
+.fa-youtube-square {
+    color: #c4302b;
+}
+
+.fa-instagram-square {
+    color: #8a3ab9;
 }
 
 footer {
@@ -304,6 +375,7 @@ footer {
     width: 100%;
     background-color: black;
     text-align: center;
+    border-top: 1px solid var(--bar);
 }
 
 footer h1 {
